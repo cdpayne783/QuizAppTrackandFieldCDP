@@ -36,5 +36,12 @@
             android:id="@+id/falseBTN"/>
     </LinearLayout>
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Score"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/scoreBTN"/>
 
 </LinearLayout>
