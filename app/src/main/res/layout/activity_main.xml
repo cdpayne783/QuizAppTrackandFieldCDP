@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/questionTV"
-        android:text="Track and Field is a fast sport."
+        android:text="@string/q1Text"
         android:textSize="40dp"
         android:textColor="@color/black"
         />
@@ -22,7 +22,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TRUE"
+            android:text="@string/trueText"
             android:textSize="40dp"
             android:textColor="@color/black"
             android:id="@+id/trueBTN"
@@ -30,7 +30,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="FALSE"
+            android:text="@string/falseText"
             android:textSize="40dp"
             android:textColor="@color/black"
             android:id="@+id/falseBTN"/>
@@ -39,9 +39,9 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Score"
+            android:text="@string/nextText"
             android:textSize="10dp"
             android:textColor="@color/white"
-            android:id="@+id/scoreBTN"/>
+            android:id="@+id/nextBTN"/>
 
 </LinearLayout>

@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">QuizAppTrackandFieldCDP</string>
+    <string name="q1Text">Track and Field is a fast sport.</string>
+    <string name="q2Text">Hurdles is not a race which the runner jumps over barriers while running.</string>
+    <string name="q3Text">During sprinting races, you use starting blocks to start from.</string>
+    <string name="q4Text">The 100 metres dash is the first event on day one of the decathlon.</string>
+    <string name="q5Text">Gail Devers became the first woman in 1988 to run the 100 metres in under 10.5</string>
+    <string name="rightMSG">You are correct! Congrats!</string>
+    <string name="wrongMSG">You are incorrect! </string>
+    <string name="trueText">TRUE</string>
+    <string name="falseText">FALSE</string>
+    <string name="nextText">NEXT</string>
+    <string name="scoreText">Score: 0</string>
+    <string name="sendText">SEND</string>
+    <string name="subjectText">New quiz score on Track and Field app</string>
+
 </resources>
