@@ -2,7 +2,6 @@ package org.forestpark.quizapptrackandfieldcdp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -34,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         trueBTN = (Button) findViewById(R.id.trueBTN);
         nextBTN = (Button) findViewById(R.id.nextBTN);
         score = 0;
-        q1 = new Question(getString(R.string.q1Text), true);
-        q2 = new Question(getString(R.string.q2Text), false);
-        q3 = new Question(getString(R.string.q3Text), true);
-        q4 = new Question(getString(R.string.q4Text), true);
-        q5 = new Question(getString(R.string.q5Text), false);
+        q1 = new Question(getString(R.string.q1Text), true, R.raw.q1);
+        q2 = new Question(getString(R.string.q2Text), false, R.raw.q2);
+        q3 = new Question(getString(R.string.q3Text), true, R.raw.q3);
+        q4 = new Question(getString(R.string.q4Text), true, R.raw.q4);
+        q5 = new Question(getString(R.string.q5Text), false, R.raw.q5);
         currentQ = q1;
         questions = new Question[] {q1, q2, q3, q4, q5};
         message = "";
@@ -56,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                 message = getString(R.string.wrongMSG);
+                    MediaPlayer music = MediaPlayer.create(MainActivity.this, R.raw.missed);
+                    music.start();
                 }
 
 
@@ -78,6 +79,8 @@ public class MainActivity extends AppCompatActivity {
                 else
                 {
                     message = getString(R.string.wrongMSG);
+                    MediaPlayer music = MediaPlayer.create(MainActivity.this, R.raw.missed);
+                    music.start();
                 }
                 int duration = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(getApplicationContext(), message, duration);
@@ -92,6 +95,9 @@ public class MainActivity extends AppCompatActivity {
               {
                   currentQ = questions[currentIndex];
                   questionTV.setText(currentQ.getqPrompt());
+
+                  MediaPlayer music = MediaPlayer.create(MainActivity.this, currentQ.getSound());
+                  music.start();
               }
               else
               {

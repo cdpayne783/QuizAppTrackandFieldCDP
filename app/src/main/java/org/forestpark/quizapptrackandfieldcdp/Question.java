@@ -3,10 +3,12 @@ package org.forestpark.quizapptrackandfieldcdp;
 public class Question {
     private String qPrompt;
     private boolean correctAnswer;
+    public int sound;
 
-    public Question(String qPrompt, boolean correctAnswer) {
+    public Question(String qPrompt, boolean correctAnswer, int sound) {
         this.qPrompt = qPrompt;
         this.correctAnswer = correctAnswer;
+        this.sound = sound;
     }
 
     public String getqPrompt() {
@@ -23,6 +25,13 @@ public class Question {
 
     public void setCorrectAnswer(boolean correctAnswer) {
         this.correctAnswer = correctAnswer;
+    }
+
+    public int getSound() {
+        return sound;
+    }
+    public void setSound(int sound) {
+        this.sound = sound;
     }
 
     @Override

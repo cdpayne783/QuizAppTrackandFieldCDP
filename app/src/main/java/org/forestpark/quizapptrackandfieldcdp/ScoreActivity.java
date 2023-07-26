@@ -15,6 +15,7 @@ public class ScoreActivity extends AppCompatActivity {
     int score;
     Button sendBTN;
     String subject;
+    String body;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,13 +30,14 @@ public class ScoreActivity extends AppCompatActivity {
 
         scoreTV.setText("SCORE = " + score);
         subject = "";
+        body = "";
 
         sendBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View view)
             {
-            subject = getString(R.id.subjectText);
-            String body = "I jut got a score of" + score + "on the Track and Field App";
+            subject = getString(R.string.subjectText);
+            body = getString(R.string.bodyStarter) + score + getString(R.string.bodyEnd);
             composeEmail(subject, body);
             }
         });

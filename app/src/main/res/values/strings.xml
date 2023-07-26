@@ -13,5 +13,7 @@
     <string name="scoreText">Score: 0</string>
     <string name="sendText">SEND</string>
     <string name="subjectText">New quiz score on Track and Field app</string>
+    <string name="bodyStarter">I jut got a score of</string>
+    <string name="bodyEnd">on the Track and Field App</string>
 
 </resources>
