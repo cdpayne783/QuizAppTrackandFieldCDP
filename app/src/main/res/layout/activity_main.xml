@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:layout_width="match_parent"
+    android:id="@+id/parentView"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/yellow"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
@@ -40,8 +43,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/nextText"
-            android:textSize="10dp"
+            android:textSize="30dp"
             android:textColor="@color/white"
             android:id="@+id/nextBTN"/>
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textAllCaps="true"
+        android:textColor="@color/purple"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/themeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:textAllCaps="true"
+        android:textColor="@color/purple"
+        android:textSize="20dp" />
+
+    <Switch
+        android:id="@+id/themeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbarSize="30dp" />
 
 </LinearLayout>
