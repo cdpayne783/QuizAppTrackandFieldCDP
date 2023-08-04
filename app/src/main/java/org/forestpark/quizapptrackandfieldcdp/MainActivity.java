@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -16,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.content.SharedPreferences;
 
-import com.google.android.material.switchmaterial.SwitchMaterial;
+
 
 
 public class MainActivity extends AppCompatActivity {

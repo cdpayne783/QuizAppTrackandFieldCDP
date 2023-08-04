@@ -63,7 +63,7 @@
         android:text="Light"
         android:textAllCaps="true"
         android:textColor="@color/purple"
-        android:textSize="20dp" />
+        android:textSize="30dp" />
 
     <Switch
         android:id="@+id/themeSwitch"
