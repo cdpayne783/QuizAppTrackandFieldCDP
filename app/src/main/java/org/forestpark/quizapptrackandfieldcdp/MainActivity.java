@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +35,10 @@ public class MainActivity extends AppCompatActivity {
     int currentIndex;
     String message;
 
+    ImageView imageIC;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +46,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         
         settings = (UserSettings) getApplication();
-        
-        
+
+        imageIC = (ImageView) findViewById(R.id.imageIcon);
+        int[] images = {R.drawable.track1, R.drawable.track2, R.drawable.track3, R.drawable.track4, R.drawable.track5 };
+
         intiWidgets();
         loadSharedPreferences();
         initSwitchListener();
@@ -113,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     currentQ = questions[currentIndex];
                     questionTV.setText(currentQ.getqPrompt());
+                    imageIC.setImageResource(images[currentIndex]);
 
                     MediaPlayer music = MediaPlayer.create(MainActivity.this, currentQ.getSound());
                     music.start();
